@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "final-app",
+    "slug": "final-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "finalapp",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.finalapp",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "finalapp"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourcompany.finalapp",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "finalapp",
+              "host": "*"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "index": {
+        "content": "<style>html, body, #root { height: 100%; overflow: auto; }</style>"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "acffdc15-78b0-4b41-8f97-303967e621fe"
+      }
+    },
+    "plugins": [
+      "expo-build-properties"
+    ]
+  }
+}
